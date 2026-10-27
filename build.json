@@ -1,0 +1,11 @@
+{
+  "name": "MQPM",
+  "framework": "vanilla",
+  "port": 8031,
+  "src": "src",
+  "dist": "dist",
+  "_doc": "Skeleton (#1224): no content yet. Add build steps and an index.html under src/, then add the SRC:NAME pair to PROJECTS in the deployer; until dist/ exists the deployer skips this project.",
+  "build": [],
+  "serve": { "mode": "auto", "dir": "src" },
+  "deploy": {}
+}

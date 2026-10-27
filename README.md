@@ -1,0 +1,10 @@
+# Fin-CM-mqpm
+
+MQPM - member of the [Fin-CM](https://github.com/diegonmarcos/Fin-CM) hub. No content yet: this repo is a README plus the deployer wiring skeleton (ticket #1224).
+
+Planned content: MQPM / StochBates. No matching project exists in front-labtools (searched at #1224); nothing to move.
+
+## Wiring
+
+- `build.json` (empty build list), `build.sh` and `ship.yml` are symlinks/files that resolve through `1_cicd` and `.github` into the `0_deployer` submodule (diegonmarcos.github.io, shallow, `ignore = all`), as in every front repo (#1192/#1196).
+- The deployer clones this repo and overlays it at `a_Companies/mqpm`; the project is skipped until `dist/` exists. Its published URL will be `https://diegonmarcos.github.io/mqpm/`.
