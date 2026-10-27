@@ -1,0 +1,17 @@
+// ============================================
+// Footer - Footer layout styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Main footer
+.footer {
+  background-color: $zinc-950;
+  color: white;
+  padding: $spacing-6;
+}
+
+.footer-content {
+  max-width: 1600px;
+  margin: 0 auto;
+}

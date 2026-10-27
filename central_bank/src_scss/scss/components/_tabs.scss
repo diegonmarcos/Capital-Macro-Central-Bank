@@ -1,0 +1,53 @@
+// ============================================
+// Tabs - Navigation tab styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Model tabs container
+.model-tabs {
+  display: flex;
+  align-items: center;
+  gap: $spacing-1;
+  background-color: $zinc-800;
+  border-radius: $radius-lg;
+  padding: $spacing-1;
+}
+
+// Individual tab button
+.model-tab {
+  padding: 0.625rem $spacing-6;
+  border-radius: $radius-md;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all $transition-normal;
+  color: $zinc-400;
+
+  &:hover {
+    color: white;
+  }
+
+  &.active {
+    background-color: $zinc-700;
+    color: white;
+    box-shadow: $shadow-md;
+  }
+}
+
+// Tab dot indicator
+.tab-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+
+  &.gold { background-color: $cb-gold-500; }
+  &.emerald { background-color: $emerald-500; }
+}
+
+// Status dot
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: $cb-growth-500;
+}

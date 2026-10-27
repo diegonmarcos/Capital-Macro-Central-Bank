@@ -1,0 +1,28 @@
+// ============================================
+// ML-ABM Page - ML and ABM model specific styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// ML-ABM page container
+.ml-abm-page {
+  padding: $spacing-6;
+}
+
+// ABM agent canvas
+.abm-canvas {
+  width: 100%;
+  min-height: 300px;
+  background-color: $zinc-900;
+  border-radius: $radius-lg;
+}
+
+// ML model grid
+.ml-models-grid {
+  display: grid;
+  gap: $spacing-4;
+
+  @include respond-to(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

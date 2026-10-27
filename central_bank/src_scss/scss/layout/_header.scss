@@ -1,0 +1,28 @@
+// ============================================
+// Header - Header layout styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Main header container
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid $zinc-800;
+  background-color: rgba($zinc-900, 0.95);
+  @include backdrop-blur;
+}
+
+// Header top bar
+.header-top {
+  background-color: $zinc-950;
+  color: white;
+  padding: $spacing-2 $spacing-4;
+}
+
+// Header main content
+.header-main {
+  padding: $spacing-3 $spacing-6;
+  @include flex-between;
+}

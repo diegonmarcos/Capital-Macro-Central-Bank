@@ -1,0 +1,63 @@
+// ============================================
+// Data Sources - Data source button and badge styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Data source button
+.data-source-btn {
+  @include flex-column;
+  align-items: center;
+  gap: $spacing-1;
+  padding: $spacing-2;
+  border-radius: $radius-lg;
+  border: 1px solid $zinc-600;
+  background-color: rgba($zinc-700, 0.5);
+  color: $zinc-500;
+  transition: all $transition-fast;
+
+  &.active {
+    background-color: rgba($emerald-500, 0.2);
+    border-color: rgba($emerald-500, 0.5);
+    color: $emerald-400;
+  }
+
+  &:hover:not(.active) {
+    border-color: $zinc-500;
+    color: $zinc-400;
+  }
+}
+
+// Nowcast sources container
+.nowcast-sources {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: $spacing-1;
+}
+
+// Source tag/badge
+.source-tag {
+  padding: 0.125rem 0.375rem;
+  background-color: $zinc-600;
+  border-radius: $radius-sm;
+  font-size: 0.75rem;
+  color: $zinc-300;
+}
+
+// Confidence bar
+.confidence-bar {
+  height: 6px;
+  background-color: $zinc-600;
+  border-radius: $radius-full;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: $radius-full;
+
+  &.high { background-color: $emerald-500; }
+  &.medium { background-color: $cb-gold-500; }
+  &.low { background-color: $red-500; }
+}

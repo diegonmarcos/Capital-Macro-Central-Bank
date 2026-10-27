@@ -1,0 +1,66 @@
+// ============================================
+// Reset - CSS Reset and base styles
+// ============================================
+
+@use '../abstracts' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 1400px;
+  background-color: $zinc-900 !important; // dark gray
+  color: white;
+  line-height: 1.5;
+  @include custom-scrollbar;
+}
+
+#app {
+  background-color: $zinc-900;
+  min-height: 100vh;
+}
+
+// Links
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Lists
+ul, ol {
+  list-style: none;
+}
+
+// Images
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Form elements inherit font
+input, button, textarea, select {
+  font: inherit;
+}
+
+// Remove default button styles
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+// Table
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
