@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as *;
+
+// Linktree Button with shimmer animation
+.linktree-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 32px;
+  background: linear-gradient(110deg, $zinc-900 0%, $zinc-900 35%, #2d2d2d 50%, $zinc-900 65%, $zinc-900 100%);
+  background-size: 200% 100%;
+  border-top: 1px solid $cb-gold-500;
+  padding: 0 16px;
+  text-decoration: none;
+  font-family: $font-mono;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  animation: shimmer 3s linear infinite;
+
+  &:hover {
+    background: linear-gradient(110deg, $zinc-800 0%, $zinc-800 35%, #3d3d3d 50%, $zinc-800 65%, $zinc-800 100%);
+    background-size: 200% 100%;
+    border-top-color: #ffc933;
+
+    .linktree-btn__label {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .linktree-btn__icon {
+      color: $cb-gold-500;
+    }
+  }
+
+  &__cmd {
+    font-weight: 700;
+    color: $cb-gold-500;
+    letter-spacing: 0.5px;
+  }
+
+  &__go {
+    color: $zinc-500;
+    font-size: 10px;
+  }
+
+  &__label {
+    color: #66ccff;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    color: $zinc-500;
+    margin-left: 4px;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

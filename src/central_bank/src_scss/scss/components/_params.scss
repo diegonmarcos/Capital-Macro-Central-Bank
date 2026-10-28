@@ -1,0 +1,64 @@
+// ============================================
+// Parameters - Parameter slider group styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Parameter group container
+.param-group {
+  margin-bottom: $spacing-4;
+}
+
+// Parameter header (label + value)
+.param-header {
+  @include flex-between;
+  margin-bottom: 0.375rem;
+}
+
+// Parameter label container
+.param-label {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+}
+
+// Parameter symbol badge
+.param-symbol {
+  padding: 0.125rem 0.375rem;
+  background-color: $zinc-700;
+  border-radius: $radius-sm;
+  @include font-code;
+  font-size: 0.75rem;
+  color: $zinc-400;
+}
+
+// Parameter value display
+.param-value {
+  @include font-code;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+// Parameter description (appears on hover)
+.param-desc {
+  margin-top: $spacing-1;
+  font-size: 0.75rem;
+  color: $zinc-500;
+  opacity: 0;
+  transition: opacity $transition-fast;
+}
+
+.param-group:hover .param-desc {
+  opacity: 1;
+}
+
+// Section header
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+  margin-bottom: $spacing-3;
+  padding-bottom: $spacing-2;
+  border-bottom: 1px solid $zinc-700;
+}

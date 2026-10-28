@@ -1,0 +1,88 @@
+// ============================================
+// Buttons - Button component styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Base button reset
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// Primary button (gold)
+.btn-primary {
+  @include button-base;
+  background-color: $cb-gold-500;
+  color: $zinc-900;
+
+  &:hover:not(:disabled) {
+    background-color: $cb-gold-600;
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  @include button-base;
+  background-color: $zinc-700;
+  color: white;
+  font-weight: 500;
+
+  &:hover:not(:disabled) {
+    background-color: $zinc-600;
+  }
+}
+
+// Success button (emerald)
+.btn-success {
+  @include button-base;
+  background-color: $emerald-500;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: $emerald-600;
+  }
+}
+
+// Danger button (red)
+.btn-danger {
+  @include button-base;
+  background-color: $red-500;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: $red-600;
+  }
+}
+
+// Ghost button
+.btn-ghost {
+  @include button-base;
+  background-color: transparent;
+  color: $zinc-400;
+
+  &:hover:not(:disabled) {
+    background-color: $zinc-800;
+    color: white;
+  }
+}
+
+// Icon button
+.btn-icon {
+  @include flex-center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: $radius-lg;
+  transition: background-color $transition-fast;
+
+  &:hover:not(:disabled) {
+    background-color: $zinc-700;
+  }
+}

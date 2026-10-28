@@ -1,0 +1,93 @@
+// ============================================
+// Forms - Form element styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// Form elements inherit font
+input, select, button {
+  font-family: inherit;
+}
+
+// Reset appearance
+.appearance-none {
+  appearance: none;
+}
+
+// Select dropdown
+select {
+  @include input-base;
+  cursor: pointer;
+}
+
+// Slider (range input)
+.slider-gold {
+  @include slider-track;
+
+  &::-webkit-slider-thumb {
+    @include slider-thumb;
+  }
+
+  &::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: $cb-gold-500;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+// Slider track container
+.slider-track {
+  position: relative;
+}
+
+// Slider progress bar
+.slider-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+// Toggle/Checkbox styles
+.toggle-container {
+  @include flex-between;
+  cursor: pointer;
+  padding: $spacing-2 0;
+}
+
+.toggle-wrapper {
+  position: relative;
+}
+
+.toggle-bg {
+  width: 2.25rem;
+  height: 1.25rem;
+  background-color: $zinc-700;
+  border-radius: $radius-full;
+  transition: background-color $transition-fast;
+}
+
+.toggle-knob {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform $transition-fast;
+}
+
+// Toggle checked states
+.peer:checked + .toggle-bg {
+  background-color: $cb-gold-500;
+}
+
+.peer:checked ~ .toggle-knob {
+  transform: translateX(16px);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "CentralBank",
+  "framework": "vanilla",
+  "port": 8011,
+  "src": "src",
+  "dist": "dist",
+  "build": [
+    {
+      "_doc": "Wrap every *.json in src/data/ as a globalThis.PORTAL_DATA[<key>] companion (data-*.json.js). Engine: front-data-json-js-wrapper.sh.",
+      "mod": "data_wrap",
+      "dir": "src/data"
+    },
+    {
+      "_doc": "Ship the wrapped data-*.json.js companions to dist/ root, so HTML can load them with <script src=\"data-<KEY>.json.js\"></script> — no fetch, no CORS.",
+      "mod": "copy",
+      "files": "data-*.json.js",
+      "from": "src/data"
+    },
+    {
+      "mod": "vite"
+    }
+  ],
+  "serve": {
+    "mode": "vite"
+  },
+  "deploy": {}
+}

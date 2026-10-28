@@ -1,0 +1,66 @@
+// ============================================
+// Central Bank Modeling System - Main SCSS
+// ============================================
+//
+// This is the main entry point for all SCSS styles.
+// It uses the 7-1 architecture pattern with the following structure:
+//
+// scss/
+// ├── abstracts/       # Variables, mixins, functions
+// │   ├── _variables.scss
+// │   ├── _mixins.scss
+// │   ├── _functions.scss
+// │   └── _index.scss
+// ├── base/            # Reset, typography, animations
+// │   ├── _reset.scss
+// │   ├── _typography.scss
+// │   ├── _animations.scss
+// │   └── _index.scss
+// ├── components/      # Buttons, cards, forms, etc.
+// │   ├── _buttons.scss
+// │   ├── _cards.scss
+// │   ├── _forms.scss
+// │   ├── _params.scss
+// │   ├── _tabs.scss
+// │   ├── _data-sources.scss
+// │   ├── _icons.scss
+// │   └── _index.scss
+// ├── layout/          # Header, footer, canvas
+// │   ├── _header.scss
+// │   ├── _footer.scss
+// │   ├── _canvas.scss
+// │   └── _index.scss
+// ├── pages/           # Page-specific styles
+// │   ├── _dsge.scss
+// │   ├── _ml-abm.scss
+// │   └── _index.scss
+// ├── utilities/       # Utility classes
+// │   ├── _spacing.scss
+// │   ├── _layout.scss
+// │   ├── _sizing.scss
+// │   ├── _borders.scss
+// │   ├── _backgrounds.scss
+// │   ├── _positioning.scss
+// │   ├── _misc.scss
+// │   └── _index.scss
+// └── main.scss        # Main entry file (this file)
+//
+// ============================================
+
+// Abstracts - Variables, mixins, functions (no CSS output)
+@use 'abstracts';
+
+// Base - Reset, typography, animations
+@use 'base';
+
+// Layout - Major layout structures
+@use 'layout';
+
+// Components - Reusable UI components
+@use 'components';
+
+// Pages - Page-specific styles
+@use 'pages';
+
+// Utilities - Helper classes (loaded last for specificity)
+@use 'utilities';

@@ -1,0 +1,108 @@
+// ============================================
+// Variables - Colors, Fonts, Breakpoints
+// ============================================
+
+// Navy Colors
+$cb-navy-50: #f0f4f8;
+$cb-navy-100: #d9e2ec;
+$cb-navy-200: #bcccdc;
+$cb-navy-300: #9fb3c8;
+$cb-navy-400: #829ab1;
+$cb-navy-500: #627d98;
+$cb-navy-600: #486581;
+$cb-navy-700: #334e68;
+$cb-navy-800: #243b53;
+$cb-navy-900: #102a43;
+$cb-navy-950: #0a1929;
+
+// Gold Colors
+$cb-gold-50: #fffbeb;
+$cb-gold-100: #fef3c7;
+$cb-gold-200: #fde68a;
+$cb-gold-300: #fcd34d;
+$cb-gold-400: #fbbf24;
+$cb-gold-500: #f59e0b;
+$cb-gold-600: #d97706;
+$cb-gold-700: #b45309;
+$cb-gold-800: #92400e;
+$cb-gold-900: #78350f;
+
+// Status Colors
+$cb-growth-400: #4ade80;
+$cb-growth-500: #22c55e;
+$cb-growth-600: #16a34a;
+
+$cb-decline-400: #f87171;
+$cb-decline-500: #ef4444;
+$cb-decline-600: #dc2626;
+
+// Zinc Colors
+$zinc-50: #fafafa;
+$zinc-100: #f4f4f5;
+$zinc-200: #e4e4e7;
+$zinc-300: #d4d4d8;
+$zinc-400: #a1a1aa;
+$zinc-500: #71717a;
+$zinc-600: #52525b;
+$zinc-700: #3f3f46;
+$zinc-800: #27272a;
+$zinc-900: #18181b;
+$zinc-950: #09090b;
+
+// Other Colors
+$emerald-400: #34d399;
+$emerald-500: #10b981;
+$emerald-600: #059669;
+$emerald-900: #064e3b;
+
+$blue-500: #3b82f6;
+$blue-600: #2563eb;
+
+$purple-500: #a855f7;
+$orange-500: #f97316;
+$red-500: #ef4444;
+$red-600: #dc2626;
+$cyan-500: #06b6d4;
+$violet-500: #8b5cf6;
+$pink-500: #ec4899;
+$lime-500: #84cc16;
+
+// Fonts
+$font-serif: "Playfair Display", "Times New Roman", serif;
+$font-sans: "Inter", system-ui, sans-serif;
+$font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Spacing
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-10: 2.5rem;
+$spacing-12: 3rem;
+
+// Border Radius
+$radius-sm: 0.25rem;
+$radius-md: 0.375rem;
+$radius-lg: 0.5rem;
+$radius-xl: 0.75rem;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-normal: 200ms ease;
+$transition-slow: 300ms ease;

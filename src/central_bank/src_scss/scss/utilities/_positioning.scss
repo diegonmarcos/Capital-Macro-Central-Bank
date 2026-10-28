@@ -1,0 +1,48 @@
+// ============================================
+// Positioning - Position and z-index utilities
+// ============================================
+
+@use '../abstracts' as *;
+
+// Position
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+// Inset
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.inset-x-0 { left: 0; right: 0; }
+.inset-y-0 { top: 0; bottom: 0; }
+
+.top-0 { top: 0; }
+.top-0\.5 { top: 0.125rem; }
+.top-1 { top: $spacing-1; }
+.top-2 { top: $spacing-2; }
+.top-full { top: 100%; }
+.-top-1 { top: -$spacing-1; }
+
+.right-0 { right: 0; }
+.right-1 { right: $spacing-1; }
+.right-2 { right: $spacing-2; }
+.-right-1 { right: -$spacing-1; }
+
+.bottom-0 { bottom: 0; }
+.bottom-1 { bottom: $spacing-1; }
+.bottom-2 { bottom: $spacing-2; }
+
+.left-0 { left: 0; }
+.left-0\.5 { left: 0.125rem; }
+.left-1 { left: $spacing-1; }
+.left-2 { left: $spacing-2; }
+.-left-1 { left: -$spacing-1; }
+
+// Z-index
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+.z-auto { z-index: auto; }

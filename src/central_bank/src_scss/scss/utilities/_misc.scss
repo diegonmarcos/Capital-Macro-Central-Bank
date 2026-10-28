@@ -1,0 +1,75 @@
+// ============================================
+// Misc - Overflow, opacity, cursor utilities
+// ============================================
+
+@use '../abstracts' as *;
+
+// Overflow
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll { overflow: scroll; }
+
+.overflow-x-auto { overflow-x: auto; }
+.overflow-y-auto { overflow-y: auto; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-y-hidden { overflow-y: hidden; }
+
+// Opacity
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: 0.25; }
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+// Cursor
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }
+.cursor-wait { cursor: wait; }
+.cursor-text { cursor: text; }
+.cursor-move { cursor: move; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+// Pointer events
+.pointer-events-none { pointer-events: none; }
+.pointer-events-auto { pointer-events: auto; }
+
+// User select
+.select-none { user-select: none; }
+.select-text { user-select: text; }
+.select-all { user-select: all; }
+.select-auto { user-select: auto; }
+
+// Screen reader only
+.sr-only {
+  @include sr-only;
+}
+
+// Visibility
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+
+// Backdrop
+.backdrop-blur {
+  @include backdrop-blur;
+}
+
+// Object fit
+.object-contain { object-fit: contain; }
+.object-cover { object-fit: cover; }
+.object-fill { object-fit: fill; }
+
+// Hover utilities
+.hover\:bg-zinc-600:hover { background-color: $zinc-600; }
+.hover\:bg-zinc-800:hover { background-color: $zinc-800; }
+.hover\:bg-cb-gold-600:hover { background-color: $cb-gold-600; }
+.hover\:bg-emerald-600:hover { background-color: $emerald-600; }
+.hover\:bg-red-600:hover { background-color: $red-600; }
+.hover\:text-white:hover { color: white; }
+.hover\:shadow-md:hover { box-shadow: $shadow-md; }
+
+// Group hover
+.group:hover .group-hover\:opacity-100 { opacity: 1; }
+
+// Peer checked transform
+.peer-checked\:translate-x-4 { transform: translateX(1rem); }

@@ -1,0 +1,21 @@
+// ============================================
+// DSGE Page - DSGE model specific styles
+// ============================================
+
+@use '../abstracts' as *;
+
+// DSGE page container
+.dsge-page {
+  padding: $spacing-6;
+}
+
+// DSGE parameters panel
+.dsge-params-panel {
+  @include card-base;
+}
+
+// DSGE equations section
+.dsge-equations {
+  display: grid;
+  gap: $spacing-4;
+}

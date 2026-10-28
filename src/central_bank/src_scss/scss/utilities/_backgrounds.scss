@@ -1,0 +1,47 @@
+// ============================================
+// Backgrounds - Background colors and gradients
+// ============================================
+
+@use '../abstracts' as *;
+
+// Background colors
+.bg-transparent { background-color: transparent; }
+.bg-white { background-color: white; }
+.bg-black { background-color: black; }
+
+.bg-zinc-600 { background-color: $zinc-600; }
+.bg-zinc-700 { background-color: $zinc-700; }
+.bg-zinc-800 { background-color: $zinc-800; }
+.bg-zinc-900 { background-color: $zinc-900; }
+.bg-zinc-950 { background-color: $zinc-950; }
+
+.bg-cb-gold-400 { background-color: $cb-gold-400; }
+.bg-cb-gold-500 { background-color: $cb-gold-500; }
+
+.bg-emerald-500 { background-color: $emerald-500; }
+.bg-blue-500 { background-color: $blue-500; }
+.bg-red-500 { background-color: $red-500; }
+
+// Background colors with opacity
+.bg-cb-gold-500\/20 { background-color: rgba($cb-gold-500, 0.2); }
+.bg-emerald-500\/20 { background-color: rgba($emerald-500, 0.2); }
+.bg-zinc-700\/50 { background-color: rgba($zinc-700, 0.5); }
+.bg-zinc-900\/95 { background-color: rgba($zinc-900, 0.95); }
+
+// Gradients
+.bg-gradient-header {
+  background: linear-gradient(to right, $zinc-800, $zinc-900);
+}
+
+.bg-gradient-emerald {
+  background: linear-gradient(to right, rgba($emerald-900, 0.5), $zinc-900);
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(to top, rgba($cb-gold-500, 0.2), transparent);
+}
+
+// Progress bar gradient
+.progress-gold {
+  background: linear-gradient(to right, $cb-gold-500, $cb-gold-400);
+}

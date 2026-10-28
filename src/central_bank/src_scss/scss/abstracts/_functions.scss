@@ -1,0 +1,49 @@
+// ============================================
+// Functions - Sass helper functions
+// ============================================
+
+// Convert px to rem
+@function rem($px) {
+  @return #{$px / 16}rem;
+}
+
+// Darken a color by percentage
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+// Lighten a color by percentage
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Get opacity variant of a color
+@function color-opacity($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+// Calculate spacing based on base unit
+@function spacing($multiplier) {
+  @return $multiplier * 0.25rem;
+}
+
+// Get z-index from scale
+@function z($layer) {
+  $layers: (
+    'base': 0,
+    'dropdown': 10,
+    'sticky': 20,
+    'fixed': 30,
+    'modal-backdrop': 40,
+    'modal': 50,
+    'popover': 60,
+    'tooltip': 70,
+  );
+
+  @if map-has-key($layers, $layer) {
+    @return map-get($layers, $layer);
+  }
+
+  @warn "Unknown z-index layer: #{$layer}";
+  @return 0;
+}
