@@ -2,7 +2,7 @@
 
 MQPM - member of the [Fin-CM](https://github.com/diegonmarcos/Fin-CM) hub. No content yet: this repo is a README plus the deployer wiring skeleton (ticket #1224).
 
-Planned content: MQPM / StochBates. No matching project exists in front-labtools (searched at #1224); nothing to move.
+Planned content: MQPM / StochBates. `src/central_bank` was moved with history from Projects-labtools `b-Nxs_PA` (#1258).
 
 ## Wiring
 
