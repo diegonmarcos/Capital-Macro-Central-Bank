@@ -5,6 +5,7 @@
   "label": "Fin-CM-mqpm",
   "code": "3.1.1.1",
   "kind": "repo",
+  "variant": "repo",
   "description": "MQPM — StochBates and quant projects",
   "visibility": "public",
   "url": "https://github.com/diegonmarcos/Fin-CM-mqpm",
