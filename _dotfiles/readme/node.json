@@ -1,0 +1,57 @@
+{
+  "schema": "readme-node/v1",
+  "generated_by": "_git-repos-master readme-render.js nodeData() from projects-repos.json; DO NOT EDIT (node repos-sot.js sync-readmes)",
+  "name": "Fin-CM-mqpm",
+  "label": "Fin-CM-mqpm",
+  "code": "3.1.1.1",
+  "kind": "repo",
+  "description": "MQPM — StochBates and quant projects",
+  "visibility": "public",
+  "url": "https://github.com/diegonmarcos/Fin-CM-mqpm",
+  "developer": "Nexus.z",
+  "farm": "3.Capital/Capital-Markets",
+  "breadcrumb": [
+    {
+      "code": "3",
+      "kind": "area",
+      "label": "Capital",
+      "icon": "💹"
+    },
+    {
+      "code": "3.1",
+      "kind": "project",
+      "label": "Macro-Central-Bank",
+      "icon": "📈"
+    },
+    {
+      "code": "3.1.1",
+      "kind": "family",
+      "label": "MQPM",
+      "icon": ""
+    }
+  ],
+  "hub": {
+    "name": "Fin-___",
+    "code": "3.0",
+    "url": "https://github.com/diegonmarcos/Fin-___"
+  },
+  "base_dir": "git",
+  "members": [],
+  "tree": [
+    "├── 0_deployer (submodule)",
+    "├── 0_hub/",
+    "│   └── Fin-___ (submodule)",
+    "├── dist/",
+    "├── docs/",
+    "└── src/",
+    "    └── central_bank/",
+    "        ├── 0.spec/",
+    "        ├── 1.ops/",
+    "        ├── dist/",
+    "        ├── dist_scss/",
+    "        ├── public/",
+    "        ├── src/",
+    "        ├── src_scss/",
+    "        └── src_static/"
+  ]
+}
