@@ -1,6 +1,6 @@
 {
-  "title": "Fin-CM-mqpm",
-  "intro": "MQPM - member of the [Fin-CM](https://github.com/diegonmarcos/Fin-CM) hub. No content yet: this repo is a README plus the deployer wiring skeleton (ticket #1224).\n\nPlanned content: MQPM / StochBates. `src/central_bank` was moved with history from Projects-labtools `b-Nxs_PA` (#1258).",
+  "title": "Capital-Macro-Central-Bank",
+  "intro": "MQPM - member of the [Capital-___](https://github.com/diegonmarcos/Capital-___) hub. No content yet: this repo is a README plus the deployer wiring skeleton (ticket #1224).\n\nPlanned content: MQPM / StochBates. `src/central_bank` was moved with history from Projects-labtools `b-Nxs_PA` (#1258).",
   "sections": [
     {
       "title": "Wiring",
